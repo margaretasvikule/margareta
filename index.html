@@ -3,108 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiramisu Recepte</title>
+    <title>Moderns Plakāts</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+        
         body {
             background-color: black;
             color: white;
-            font-family: Arial, sans-serif;
+            font-family: 'Anton', sans-serif;
             text-align: center;
-            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
-        .big-title {
-            font-size: 4rem;
-            font-weight: bold;
-            background: linear-gradient(to bottom, #ffffff, rgba(0, 0, 0, 0));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            display: inline-block;
-            margin-bottom: 20px;
-            position: relative;
-            overflow: hidden;
-        }
-        .big-title::after {
-            content: '';
-            position: absolute;
-            left: 50%;
-            width: 120%;
-            height: 100%;
-            background: linear-gradient(to bottom, rgba(255, 0, 150, 1), rgba(0, 0, 0, 0));
-            filter: blur(15px);
-            transform: translateX(-50%);
-        }
-        .stretched-text {
-            font-size: 2rem;
-            font-weight: bold;
-            display: inline-block;
-            color: #ff6600;
-            text-shadow: 2px 2px 5px #ff3300;
+        .container {
             position: relative;
         }
-        .stretched-text::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 100%;
-            width: 80px;
-            height: 20px;
-            background: linear-gradient(to right, #ff6600, transparent);
-            filter: blur(10px);
-            transform: translateY(-50%);
-        }
-        .content {
-            max-width: 600px;
-            margin: 20px auto;
-            font-size: 1.2rem;
-        }
-        .recipe {
-            margin-top: 40px;
-            font-size: 1rem;
-        }
-        .link {
-            display: block;
-            margin-top: 30px;
-            font-size: 1.5rem;
-            color: #ffcc00;
-            text-decoration: none;
+        .title {
+            font-size: 6rem;
             position: relative;
+            text-transform: uppercase;
         }
-        .link::after {
-            content: '';
+        .title::before {
+            content: attr(data-text);
             position: absolute;
-            width: 100%;
-            height: 2px;
-            bottom: 0;
+            top: 0;
             left: 0;
-            background: #ffcc00;
-            transform: scaleX(0);
-            transition: transform 0.3s ease-in-out;
-        }
-        .link:hover::after {
-            transform: scaleX(1);
+            right: 0;
+            color: transparent;
+            text-shadow: 0px 0px 15px rgba(255, 150, 0, 0.8),
+                         0px 0px 30px rgba(255, 100, 0, 0.6),
+                         0px 0px 50px rgba(255, 50, 0, 0.4);
+            filter: blur(8px);
+            z-index: -1;
         }
     </style>
 </head>
 <body>
-    <div class="big-title">Receptes</div>
-    <br>
-    <div class="stretched-text">Tiramisū recepte</div>
-    <div class="content">
-        <h2 class="stretched-text">Par kūkas recepti</h2>
-        <p>Šeit es ievietošu informāciju par tiramisū kūku un tās izcelsmi.</p>
+    <div class="container">
+        <div class="title" data-text="PLAKĀTS">PLAKĀTS</div>
     </div>
-    <div class="recipe">
-        <h3 class="stretched-text">Tiramisū sastāvdaļas:</h3>
-        <ul>
-            <li>250g mascarpone siera</li>
-            <li>3 olas</li>
-            <li>100g cukura</li>
-            <li>200ml stipras kafijas</li>
-            <li>200g savoiardi cepumu</li>
-            <li>Kakao pulveris pārkaisīšanai</li>
-        </ul>
-    </div>
-    <a class="link" href="#">Labu apetīti!</a>
 </body>
 </html>
-
