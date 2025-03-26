@@ -3,109 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MARGARETAS RECEPTES - Tiramisū</title>
-    
-    <!-- Fontu pievienošanai izmantošu Google Fonts, kas būs līdzīgs Whale fontam -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
+    <title>Tiramisu Recepte</title>
     <style>
-        /* Pamatstili */
         body {
-            font-family: 'Poppins', sans-serif; /* Izmanto līdzīgu fontu Whale */
-            background-color: #333; /* Tumši pelēks fons */
-            color: white; /* Balts teksts */
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-
-        header {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
             text-align: center;
-            padding: 60px 20px;
-        }
-
-        h1 {
-            font-size: 3em; /* Liels virsraksts */
-            margin: 0;
-        }
-
-        h2 {
-            font-size: 2em; /* Mazāks virsraksts */
-            margin-top: 10px;
-        }
-
-        h3 {
-            font-size: 1.5em;
-            margin-top: 30px;
-        }
-
-        p {
-            font-size: 1.2em;
-            color: #ccc; /* Mazliet gaišāks pelēks teksts */
-            margin: 20px 0;
-            text-align: justify;
-        }
-
-        a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.5em;
-            background-color: #4CAF50;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        a:hover {
-            background-color: #45a049; /* Tumšāka zaļa krāsa pie hover */
-        }
-
-        .container {
-            width: 80%;
-            margin: 0 auto;
             padding: 20px;
         }
-
+        .big-title {
+            font-size: 3rem;
+            font-weight: bold;
+            background: linear-gradient(to bottom, #ffffff, rgba(0, 0, 0, 0));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .stretched-text {
+            font-size: 2rem;
+            font-weight: bold;
+            display: inline-block;
+            color: #ff6600;
+            text-shadow: 2px 2px 5px #ff3300;
+        }
+        .content {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+        }
+        .recipe {
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+        .link {
+            display: block;
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: #ffcc00;
+            text-decoration: none;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>RECEPTES</h1>
-        <h2>Tiramisū recepte</h2>
-    </header>
-
-    <div class="container">
-        <h3>Par kūkas recepti</h3>
-        <p>
-            <!-- Šeit būs vieta, kur tu vari ievadīt tekstu par sevi -->
-            Ievieto šeit stāstu par sevi vai savu mīļāko tiramisū receptes versiju. 
-        </p>
-
-        <h3>Tiramisū recepte</h3>
-        <p>
-            Šī ir mana mīļākā tiramisū recepte! Lai pagatavotu tiramisū, tev būs nepieciešami šādi produkti:
-            <ul>
-                <li>500g maskarpones siers</li>
-                <li>200g puscieti pirkstiņi (ladyfingers)</li>
-                <li>1 tase stipras kafijas</li>
-                <li>3 olu dzeltenumi</li>
-                <li>100g cukura</li>
-                <li>100g šokolādes (pēc izvēles)</li>
-                <li>2 tējkarotes vaniļas ekstrakta</li>
-                <li>100 ml zema alkohola (piemēram, rumā)</li>
-            </ul>
-            Recepte:
-            <ol>
-                <li>Pagatavo kafiju un atdzesē to līdz istabas temperatūrai.</li>
-                <li>Olus dzeltenumus sajauc ar cukuru, līdz veidojas krēmveida masa.</li>
-                <li>Pievieno maskarpones sieru un vaniļas ekstraktu. Samaisa līdz viendabīgai masai.</li>
-                <li>Kafiju sajauc ar izvēlēto alkoholu, un iegūtos pirkstiņus īslaicīgi iegremdē kafijā.</li>
-                <li>Veido slāņus, sākot ar pirkstiņiem, pārklājot tos ar krēmu un atkārtojot šo procesu.</li>
-                <li>Pabeidz ar šokolādi, kas sarīvēta virsū. Atstāj ledusskapī uz vairākām stundām.</li>
-            </ol>
-        </p>
-
-        <a href="#" target="_blank">Labas apetītes!</a>
+    <div class="big-title">Receptes</div>
+    <br>
+    <div class="stretched-text">Tiramisū recepte</div>
+    <div class="content">
+        <h2 class="stretched-text">Par kūkas recepti</h2>
+        <p>Šeit es ievietošu informāciju par tiramisū kūku un tās izcelsmi.</p>
     </div>
+    <div class="recipe">
+        <h3 class="stretched-text">Tiramisū sastāvdaļas:</h3>
+        <ul>
+            <li>250g mascarpone siera</li>
+            <li>3 olas</li>
+            <li>100g cukura</li>
+            <li>200ml stipras kafijas</li>
+            <li>200g savoiardi cepumu</li>
+            <li>Kakao pulveris pārkaisīšanai</li>
+        </ul>
+    </div>
+    <a class="link" href="#">Labu apetīti!</a>
 </body>
 </html>
