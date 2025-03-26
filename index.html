@@ -25,6 +25,7 @@
             font-size: 6rem;
             position: relative;
             text-transform: uppercase;
+            color: white;
         }
         .title::before {
             content: attr(data-text);
@@ -32,18 +33,20 @@
             top: 0;
             left: 0;
             right: 0;
-            color: transparent;
-            text-shadow: 0px 0px 15px rgba(255, 150, 0, 0.8),
-                         0px 0px 30px rgba(255, 100, 0, 0.6),
-                         0px 0px 50px rgba(255, 50, 0, 0.4);
-            filter: blur(8px);
+            color: white;
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 1),
+                         0px 0px 20px rgba(255, 165, 0, 0.8),
+                         0px 0px 40px rgba(255, 69, 0, 0.6),
+                         0px 0px 60px rgba(255, 0, 0, 0.4);
+            filter: blur(5px);
+            mix-blend-mode: screen;
             z-index: -1;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="title" data-text="PLAKĀTS">PLAKĀTS</div>
+        <div class="title" data-text="EXHAUST">EXHAUST</div>
     </div>
 </body>
 </html>
