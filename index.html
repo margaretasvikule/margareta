@@ -22,10 +22,11 @@
             position: relative;
         }
         .title {
-            font-size: 6rem;
+            font-size: 4rem;
             position: relative;
             text-transform: uppercase;
             color: white;
+            text-decoration: none; /* No underline */
         }
         .title::before {
             content: attr(data-text);
@@ -35,23 +36,29 @@
             right: 0;
             color: transparent;
             text-shadow: 
-                -12px -12px 20px rgba(0, 50, 255, 1), /* Zilā tonis kreisajā augšējā pusē */
-                12px 12px 20px rgba(255, 50, 0, 1), /* Oranžais labajā apakšējā pusē */
-                -20px -20px 40px rgba(0, 50, 255, 0.9),
-                20px 20px 40px rgba(255, 50, 0, 0.9),
-                -30px -30px 60px rgba(0, 50, 255, 0.8),
-                30px 30px 60px rgba(255, 50, 0, 0.8),
-                -40px -40px 80px rgba(0, 50, 255, 0.7),
-                40px 40px 80px rgba(255, 50, 0, 0.7);
+                -12px -12px 20px rgba(255, 255, 0, 1), /* Dzeltenā tonis */
+                12px 12px 20px rgba(255, 255, 0, 1),
+                -20px -20px 40px rgba(255, 255, 0, 0.9),
+                20px 20px 40px rgba(255, 255, 0, 0.9),
+                -30px -30px 60px rgba(255, 255, 0, 0.8),
+                30px 30px 60px rgba(255, 255, 0, 0.8),
+                -40px -40px 80px rgba(255, 255, 0, 0.7),
+                40px 40px 80px rgba(255, 255, 0, 0.7);
             filter: blur(12px);
             mix-blend-mode: screen;
             z-index: -1;
+        }
+        .title:hover {
+            color: yellow;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="title" data-text="EXHAUST">EXHAUST</div>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="title" data-text="Daudz laimes dzimšanas dienā">
+            Daudz laimes dzimšanas dienā
+        </a>
     </div>
 </body>
 </html>
+
