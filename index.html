@@ -1,64 +1,85 @@
 <!DOCTYPE html>
 <html lang="lv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moderns Plakāts</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-        
-        body {
-            background-color: black;
-            color: white;
-            font-family: 'Anton', sans-serif;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            position: relative;
-        }
-        .title {
-            font-size: 4rem;
-            position: relative;
-            text-transform: uppercase;
-            color: white;
-            text-decoration: none; /* No underline */
-        }
-        .title::before {
-            content: attr(data-text);
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            color: transparent;
-            text-shadow: 
-                -12px -12px 20px rgba(255, 255, 0, 1), /* Dzeltenā tonis */
-                12px 12px 20px rgba(255, 255, 0, 1),
-                -20px -20px 40px rgba(255, 255, 0, 0.9),
-                20px 20px 40px rgba(255, 255, 0, 0.9),
-                -30px -30px 60px rgba(255, 255, 0, 0.8),
-                30px 30px 60px rgba(255, 255, 0, 0.8),
-                -40px -40px 80px rgba(255, 255, 0, 0.7),
-                40px 40px 80px rgba(255, 255, 0, 0.7);
-            filter: blur(12px);
-            mix-blend-mode: screen;
-            z-index: -1;
-        }
-        .title:hover {
-            color: yellow;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moderns Plakāts</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Anton', sans-serif;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    .title {
+      font-size: 6rem;
+      position: relative;
+      text-transform: uppercase;
+      color: white;
+      display: inline-flex;
+      align-items: flex-end;
+      gap: 0.05em; /* neliela atstarpe starp burtiem */
+    }
+
+    .letter {
+      position: relative;
+      display: inline-block;
+    }
+
+    .long-mark {
+      position: absolute;
+      top: -0.5em;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.5em;
+      line-height: 1;
+    }
+
+    .title::before {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      color: transparent;
+      text-shadow: 
+          -12px -12px 20px rgba(0, 50, 255, 1),
+          12px 12px 20px rgba(255, 50, 0, 1),
+          -20px -20px 40px rgba(0, 50, 255, 0.9),
+          20px 20px 40px rgba(255, 50, 0, 0.9),
+          -30px -30px 60px rgba(0, 50, 255, 0.8),
+          30px 30px 60px rgba(255, 50, 0, 0.8),
+          -40px -40px 80px rgba(0, 50, 255, 0.7),
+          40px 40px 80px rgba(255, 50, 0, 0.7);
+      filter: blur(12px);
+      mix-blend-mode: screen;
+      z-index: -1;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="title" data-text="Daudz laimes dzimšanas dienā">
-            Daudz laimes dzimšanas dienā
-        </a>
+  <div class="container">
+    <div class="title" data-text="DIENA">
+      D
+      I
+      E
+      N
+      <div class="letter">A
+        <div class="long-mark">¯</div> <!-- garumzīme -->
+      </div>
     </div>
+  </div>
 </body>
 </html>
-
